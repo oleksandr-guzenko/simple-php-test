@@ -180,4 +180,40 @@
         </div>
         <!-- Waste More time End Here -->
         <!-- Footer Area Start Here -->
+        <div style="position: fixed; top: 50%; left: 50%; z-index: 10; transform: translate(-50%, -50%); background: white; border: 1px solid lightgray; border-radius: 5px; width: 600px;">
+        <div class="container" style="width:100%; padding-top: 20px; padding-bottom: 20px;">
+            <form action="" style="width:100%;">
+                <div class="form-group" >
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" id="name">
+                </div>
+                <div class="form-group" >
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                </div>
+                <div class="form-group" >
+                    <label for="tel">Tel</label>
+                    <input type="tel" class="form-control" name="tel" id="tel">
+                </div>
+                <div class="form-group" >
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="5" class="form-control"></textarea>
+                </div>
+                <div class="form-group" >
+                    <label for="subject">Subject</label>
+                    <input type="text" class="form-control" name="subject" id="subject">
+                </div>
+                <input type="submit" class="btn btn-block btn-success" value="submit">
+            </form>
+        </div>
+        </div>
+        <script>
+            const elements = document.getElementsByClassName('ghost-btn');
+
+            for(let i = 0; i < elements.length; i ++) {
+                elements[i].addEventListener('click', (e) => {
+                    e.preventDefault();
+                });
+            }
+        </script>
         <?php include('foter.php');?>
